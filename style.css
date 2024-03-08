@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* background-color: #222831; */
+    background-color: #7b59ba; 
+    color: #EEEEEE;
+    display: flex;
+}
+.nav1{
+    flex-basis: 15%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav2{
+    flex-basis: 70%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav3{
+    flex-basis: 15%;
+    /* background-color: green; */
+}
+a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-size: 20px;
+}
+.mainsection{
+    height: 100vh;
+    width: 100%;
+    /* background-color: black; */
+    background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg);
+    background-size: cover;
+    
+}
+
+.maindiv{
+    height: 30vh;
+    width: 100vh;
+    /* background-color: yellow; */
+    position: relative;
+    top: 190px;
+}
+.maindiv h1{
+    /* color: aliceblue; */
+    font-size: 50px;
+}
+.maindiv p{
+    /* color: aliceblue; */
+    font-size: 30px;
+}
+.downloadbtn{
+    border-radius: 10px;
+    height: 60px;
+    width: 170px;
+}
+.downloadbtn > p{
+    font-size: 20px;
+}
+.skills {
+    height: 120vh;
+    width: 100%;
+    background-color: brown; 
+}
+.skills div {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    position: relative;
+    top: 50px;
+}
+.mainone{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.maintwo{ 
+    display: flex;
+    justify-content: space-evenly;
+}
+/* .skills div:hover{
+    width: 400px;
+    height: 400px;
+    scale: 1.1;
+} */
+.footer{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.info{
+    height: 80vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+.part1{
+    flex-basis: 50%;
+    background-color: green;
+}
+.part2 {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.part-two{
+    height: 60vh;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.part-two >h1{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.part-two > p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.foot{
+    height: 20vh;
+    width: 100%;
+    background-color: brown;
+}
+.footone{
+    height: 100%;
+    width: 50%;
+    background-color: aliceblue;
+}
