@@ -1,38 +1,70 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-.navbar{
-    height: 80px;
+
+  body{
+    min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
     width: 100%;
-    /* background-color: #222831; */
-    background-color: #7b59ba; 
-    color: #EEEEEE;
+    list-style: none;
     display: flex;
-}
-.nav1{
-    flex-basis: 15%;
-    /* background-color: red; */
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-}
-.nav2{
-    flex-basis: 70%;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.nav3{
-    flex-basis: 15%;
-    /* background-color: green; */
-}
-a{
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    color: #EEEEEE;
-    font-size: 20px;
-}
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+
 .mainsection{
     height: 100vh;
     width: 100%;
@@ -58,81 +90,276 @@ a{
     font-size: 30px;
 }
 .downloadbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    height: 60px;
+    height: 70px;
     width: 170px;
+    background-color: grey;
 }
-.downloadbtn > p{
+.downloadbtn > a{
     font-size: 20px;
 }
 .skills {
-    height: 120vh;
+    height: 100vh;
     width: 100%;
-    background-color: brown; 
+    /* background-color: brown;  */
+    background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg);
+    background-size: cover;
 }
 .skills div {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     background-color: aliceblue;
     position: relative;
     top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .mainone{ 
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
 }
+
 .maintwo{ 
     display: flex;
     justify-content: space-evenly;
 }
-/* .skills div:hover{
-    width: 400px;
-    height: 400px;
-    scale: 1.1;
-} */
-.footer{
+.projhead{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projhead > h1{
+    color: red;
+    font-size: 50px;
+}
+
+.project{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.projectone{
+    flex-basis: 50%;
+    background-color: #7b59ba;
+    display: flex;
+}
+.QuickLearn{
+    flex-basis: 50%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.QuickLearnimg{
+    flex-basis: 50%;
+}
+.projecttwo{
+    display: flex;
+    
+}
+.chatimg{
+    flex-basis: 50%;
+    order: 1;
+}
+.chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 50%;
+    color: aliceblue;
+    order: 2;
+}
+
+.info{
     height: 100vh;
     width: 100%;
     background-color: black;
-}
-.info{
-    height: 80vh;
-    width: 100%;
-    background-color: red;
     display: flex;
 }
 .part1{
     flex-basis: 50%;
     background-color: green;
-}
-.part2 {
-    flex-basis: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
+}
+.photo{
+    background-color: aliceblue;
+    height: 80%;
+    width: 80%;
+    background-image: url(./img.jpeg);
+    background-size: cover;
+    border-radius: 100px;
+}
+.part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: #7b59ba;
 }
 .part-two{
-    height: 60vh;
+    height: 80%;
     width: 80%;
-    background-color: whitesmoke;
+    background-color: aqua;
 }
-.part-two >h1{
-    font-size: 50px;
-    margin-bottom: 10px;
+.part-two h1{
+    font-size: 60px;
+    margin-bottom: 20px;
 }
+
 .part-two > p{
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 30px;
 }
+
 .foot{
     height: 20vh;
     width: 100%;
-    background-color: brown;
+    display: flex;
 }
 .footone{
-    height: 100%;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aliceblue;
+    flex-basis: 60%;
+    font-size: 25px;
 }
+.foottwo{
+    flex-basis: 40%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foottwo > a{
+    
+}
+.foottwo >a> i{
+    font-size: 30px;
+    color: #7b59ba;
+}
+.foottwo >a> i > p{
+    color: #7b59ba;
+    margin-left: 5px;
+    display: inline;
+    font-size: 15px;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+    .maindiv h1{
+        font-size: 30px;
+    }
+    .maindiv p{
+        font-size: 20px;
+    }
+    .downloadbtn{
+        height: 70px;
+        width: 170px;
+     }
+     .downloadbtn{
+        text-decoration: none;
+     }
+    .mainone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainone div{
+        height: 40px;
+        margin: 10px;
+    }
+    .maintwo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maintwo div{
+        height: 40px;
+        margin: 10px;
+    }
+    .project{
+        height: 200vh;
+        background-color: red;
+        display: flex;
+    } 
+    .projectone{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .QuickLearn{
+        width: 100%;
+    }
+    .QuickLearnimg{
+        width: 100%;
+    }
+    .projecttwo{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .chat{
+        order: 1;
+    }
+    .chatimg{
+        order: 2;
+    }
+    .info{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .part1{
+        flex-basis: 100%;
+    }
+    .part-two > p{
+        display: none;
+    }
+    .part2{
+        display: none;
+    }
+    .photo{
+        border-radius: 40%;
+    }
+    .foot{
+        height: 10vh;
+    }
+    .footone > p{
+        font-size: 15px;
+    }
+    .foottwo >a> i{
+        font-size: 15px;
+        color: #7b59ba;
+    }
+    .foottwo >a> i > p{
+        color: #7b59ba;
+        margin-left: 5px;
+        display: inline;
+        font-size: 10px;
+    }
+  }
+  @media(max-width: 300px){
+    .sidebar{
+      width: 100%;
+    }
+  }
