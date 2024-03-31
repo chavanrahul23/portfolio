@@ -6,15 +6,29 @@
 
   body{
     min-height: 100vh;
-    background: url('laptop.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: black;
   }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #CBE4DE;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2C3333;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
   nav{
-    background-color: white;
+    background-color: #284b63;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
   }
   nav ul{
     width: 100%;
@@ -22,6 +36,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    color: #EEEEEE;
   }
   nav li{
     height: 50px;
@@ -32,10 +47,10 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: black;
+    color: #d9d9d9;
   }
   nav a:hover{
-    background-color: #f0f0f0;
+    background-color: #353535;
   }
   nav li:first-child{
     margin-right: auto;
@@ -69,7 +84,7 @@
     height: 100vh;
     width: 100%;
     /* background-color: black; */
-    background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg);
+    /* background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg); */
     background-size: cover;
     
 }
@@ -87,7 +102,7 @@
 }
 .maindiv p{
     /* color: aliceblue; */
-    font-size: 30px;
+    font-size: 40px;
 }
 .downloadbtn{
     display: flex;
@@ -96,20 +111,22 @@
     border-radius: 10px;
     height: 70px;
     width: 170px;
-    background-color: grey;
+    background-color: #284b63;
 }
 .downloadbtn > a{
+    text-decoration: none;
     font-size: 20px;
+    color: #d9d9d9;
 }
 .skills {
     height: 100vh;
     width: 100%;
     /* background-color: brown;  */
-    background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg);
+    /* background-image: url(./visax-EzU1ME2O1ak-unsplash.jpg); */
     background-size: cover;
 }
-.skills div {
-    height: 250px;
+.skills  div {
+    height: 200px;
     width: 250px;
     background-color: aliceblue;
     position: relative;
@@ -118,77 +135,185 @@
     align-items: center;
     justify-content: center;
 }
-
+.skills >.mainone >div > #desktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.skills> .mainone > div> #mobile{
+    display: none;
+}
+.skills >.mainone >div > #sqldesktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.skills> .mainone > div> #htmlmobile{
+    display: none;
+}
+.skills >.mainone >div > #htmldesktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.skills> .mainone > div> #sqlmobile{
+    display: none;
+}
+.skills> .maintwo > div> #springmobile{
+    display: none;
+}
+.skills >.maintwo >div > #springdesktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.skills> .maintwo > div> #jdbcmobile{
+    display: none;
+}
+.skills >.maintwo >div > #jdbcdesktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.skills> .maintwo > div> #hibernateamobile{
+    display: none;
+}
+.skills >.maintwo >div > #hibernatedesktop {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 .mainone{ 
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+}
+.mainone > div > p {
+    font-size: 40px;
+    font-weight: bolder;
 }
 
 .maintwo{ 
     display: flex;
     justify-content: space-evenly;
 }
+.maintwo > div > h1{
+    font-size: 40px;
+    font-weight: bolder;
+}
+#HIBERNATE{
+    background-repeat: no-repeat;
+}
 .projhead{
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .projhead > h1{
-    color: red;
+    color: black;
     font-size: 50px;
 }
 
 .project{
-    height: 100vh;
-    background-color: black;
+    height: 120vh;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
 }
 .projectone{
     flex-basis: 50%;
-    background-color: #7b59ba;
+    /* background-color: #7b59ba; */
     display: flex;
 }
 .QuickLearn{
     flex-basis: 50%;
-    background-color: bisque;
+    /* background-color: bisque; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.QuickLearnmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    background-color: #284c69;
+    color: #d9d9d9;
+    box-shadow: 5px 10px 18px #284c69;
+    border-radius: 50px;
+}
+.QuickLearn> .QuickLearnmain > div > h1{
+    margin-bottom: 30px;
+
+}
+.QuickLearn > .QuickLearnmain > div > p{
+    margin-left: 30px;
+    margin-right: 10px;
 }
 .QuickLearnimg{
     flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .projecttwo{
+    flex-basis: 50%;
     display: flex;
     
 }
+
 .chatimg{
     flex-basis: 50%;
     order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .chat{
+    flex-basis: 50%;
+    /* background-color: black; */
+    color: black;
+    order: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatmain{
+    height: 80%;
+    width: 80%;
+    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: 50%;
-    color: aliceblue;
-    order: 2;
+    background-color: #284c69;
+    color: #d9d9d9;
+    box-shadow: 5px 10px 18px #284c69;
+    border-radius: 50px;
 }
-
+.chat > .chatmain >  div> h1{
+    margin-bottom: 30px;
+}
+.chat > .chatmain >  div> p{
+    margin-left: 30px;
+    margin-right: 10px;
+}
 .info{
     height: 100vh;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
 }
 .part1{
     flex-basis: 50%;
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,39 +331,50 @@
     justify-content: center;
     align-items: center;
     flex-basis: 50%;
-    background-color: #7b59ba;
+    /* background-color: #7b59ba; */
 }
 .part-two{
     height: 80%;
     width: 80%;
-    background-color: aqua;
+    background-color: #284b63;
+    color: #d9d9d9;
+    box-shadow: 5px 10px 18px #284c69;
+    border-radius: 50px;
+    margin-left: 10px;
 }
 .part-two h1{
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-left: 15px;
 }
 
 .part-two > p{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
-
+/*  */
+.container{
+    display: none;
+}
 .foot{
     height: 20vh;
     width: 100%;
     display: flex;
+    background-color: #284b63;
 }
 .footone{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     flex-basis: 60%;
     font-size: 25px;
 }
 .foottwo{
     flex-basis: 40%;
-    background-color: black;
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -249,15 +385,18 @@
 }
 .foottwo >a> i{
     font-size: 30px;
-    color: #7b59ba;
+    color: #d9d9d9;
 }
 .foottwo >a> i > p{
-    color: #7b59ba;
+    color:#d9d9d9;
     margin-left: 5px;
     display: inline;
     font-size: 15px;
 }
 @media(max-width: 800px){
+    .sidebar a{
+        color: black;
+    }
     .hideOnMobile{
       display: none;
     }
@@ -284,8 +423,9 @@
         align-items: center;
     }
     .mainone div{
-        height: 40px;
+        height: 50px;
         margin: 10px;
+        width: 350px;
     }
     .maintwo{
         display: flex;
@@ -294,12 +434,12 @@
         align-items: center;
     }
     .maintwo div{
-        height: 40px;
+        height: 50px;
         margin: 10px;
+        width: 350px;
     }
     .project{
         height: 200vh;
-        background-color: red;
         display: flex;
     } 
     .projectone{
@@ -308,6 +448,7 @@
         flex-direction: column;
     }
     .QuickLearn{
+        height: 80%;
         width: 100%;
     }
     .QuickLearnimg{
@@ -330,7 +471,7 @@
         flex-direction: column;
     }
     .part1{
-        flex-basis: 100%;
+        display: none;
     }
     .part-two > p{
         display: none;
@@ -349,14 +490,121 @@
     }
     .foottwo >a> i{
         font-size: 15px;
-        color: #7b59ba;
     }
     .foottwo >a> i > p{
-        color: #7b59ba;
+
         margin-left: 5px;
         display: inline;
         font-size: 10px;
     }
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: #CBE4DE;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #2C3333;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+/*  */
+    .info{
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+      .img{
+        height: 80%;
+        width: 80%;
+        border-radius: 10px;
+      }
+      .overlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        background-color: black;
+        cursor: pointer;
+      }
+      .content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: aliceblue;
+      }
+      .container:hover .overlay{
+        opacity: 0.8;
+      }
+    
+      .skills >.mainone >div > #desktop {
+        display: none;
+    }
+    .skills> .mainone > div> #mobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills >.mainone >div > #sqldesktop {
+        display: none;
+    }
+    .skills> .mainone > div> #sqlmobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills >.mainone >div > #htmldesktop {
+        display: none;
+    }
+    .skills> .mainone > div> #htmlmobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills> .maintwo > div> #springmobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills >.maintwo >div > #springdesktop {
+        display: none;
+    }
+    .skills> .maintwo > div> #jdbcmobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills >.maintwo >div > #jdbcdesktop {
+        display: none;
+    }
+    .skills> .maintwo > div> #hibernateamobile{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .skills >.maintwo >div > #hibernatedesktop {
+        display: none;
+    }
+    .part-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chat > .chatmain{
+        height: 90%;
+    } 
   }
   @media(max-width: 300px){
     .sidebar{

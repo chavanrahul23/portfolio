@@ -4,52 +4,64 @@ console.log(body);
 function changeText() {
     if(body>800)
     {
-    document.getElementById("java").innerHTML = "OOPS <br> Exception <br> Collections <br>";
-    document.getElementById("java").style.fontSize="40px";
+    document.getElementById("desktop").src = "images/javacontent.png";
+    console.log("hi");
     }
 }
 function resetText() {
-    document.getElementById("java").innerText = "JAVA";
-    document.getElementById("java").style.fontSize="40px";
+    console.log("bye");
+    document.getElementById("desktop").src = "images/javamain.jpg";
 }
 //sql
-function changeSQLText() {
-    document.getElementById("sql").innerHTML = "Data Definition Language(DDL) <br> Data Manipulation Language(DML) <br> Data Control Language(DCL) <br> Transaction Control Statements(TCS) <br> JOINS";
-    // document.getElementById("sql").style.fontSize="40px";
+function sqlchangeText() {
+    if(body>800)
+    {
+    document.getElementById("sqldesktop").src = "images/sqlcontent.png";
+    console.log("hi");
+    }
 }
-function resetSQLText() {
-    document.getElementById("sql").innerText = "SQL";
-    document.getElementById("sql").style.fontSize="40px";
+function sqlresetText() {
+    console.log("bye");
+    document.getElementById("sqldesktop").src = "images/sqlmain.jpg";
 }
 //spring
-function changespringText() {
-    document.getElementById("spring").innerHTML = " Spring JPA  <br> Spring Core <br> Spring Boot";
-    document.getElementById("spring").style.fontSize="40px";
+function springchangeText() {
+    if(body>800)
+    {
+    document.getElementById("springdesktop").src = "images/springcontent.png";
+    console.log("hi");
+    }
 }
-function resetspringText() {
-    document.getElementById("spring").innerText = "SPRING";
-    document.getElementById("spring").style.fontSize="40px";
+function springresetText() {
+    console.log("bye");
+    document.getElementById("springdesktop").src = "images/springmain.png";
 }
 // JDBC
-function changeJDBcText() {
-    console.log("jdbc");
-    document.getElementById("JDBc").innerHTML = "Java Database Connectivity <br> Servlet";
-    document.getElementById("JDBc").style.fontSize="40px";
+function jdbcchangeText() {
+    if(body>800)
+    {
+    document.getElementById("jdbcdesktop").src = "images/jdbccontent.png";
+    console.log("hi");
+    }
 }
-function resetJDBcText() {
-    document.getElementById("JDBc").innerText = "JDBC";
-    document.getElementById("JDBc").style.fontSize="40px";
+function jdbcresetText() {
+    console.log("bye");
+    document.getElementById("jdbcdesktop").src = "images/jdbcmain.png";
 }
 
 // HIBERNATE
-function changeHIBERNATEText() {
-    document.getElementById("HIBERNATE").innerHTML = "Mapping";
-    document.getElementById("HIBERNATE").style.fontSize="40px";
+function hibernatechangeText() {
+    if(body>800)
+    {
+    document.getElementById("hibernatedesktop").src = "images/hibernatecontent.png";
+    console.log("hi");
+    }
 }
-function resetHIBERNATEText() {
-    document.getElementById("HIBERNATE").innerText = "HIBERNATE";
-    document.getElementById("HIBERNATE").style.fontSize="40px";
+function hibernateresetText() {
+    console.log("bye");
+    document.getElementById("hibernatedesktop").src = "images/HIBERNATEmain.png";
 }
+
 
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar')
